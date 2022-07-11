@@ -1,17 +1,14 @@
-def fizzbuzz
-    num_max = 100
-    (1..num_max).each do |num|
+def fizzbuzz(num)
     if num%15 == 0
-      puts "FizzBuzz"
+      "FizzBuzz"
     elsif num%3 == 0
-      puts "Fizz"
+      "Fizz"
     elsif num%5 == 0
-      puts "Buzz"
-    else puts num
+      "Buzz"
+    else  num
     end
-  end
 end
-
-
-
-puts fizzbuzz
+num_max = 100
+    (1..num_max).each do |num|
+puts fizzbuzz(num)
+                      end
